@@ -1,0 +1,19 @@
+{
+    "debug": true,
+    "pages": [
+        "pages/index/index",
+        "pages/blists/blists",
+        "pages/nlists/nlists",
+        "pages/article/article",
+        "pages/brandarticle/brandarticle",
+        "pages/search/search",
+        "pages/paihangbang/paihangbang"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#d71218",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "桥梓招商加盟服务平台",
+        "navigationStyle": "default",
+        "backgroundTextStyle": "light"
+    }
+}

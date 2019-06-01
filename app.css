@@ -1,0 +1,24 @@
+/* 引入内容渲染模块样式 */
+
+@import "wxParser/index.css";
+
+/**app.css**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.bottom-view{background: #ffffff;}
+.zxnavbarcon {background: #ffffff;	height: 120rpx;	position: fixed;	bottom: 0;	left: 0;	width: 100%;	/* padding-left: 0.13333333rem;*/}
+.zxnavbarcon .zxHdImgcons {	background: #fff;	width: 55.99%;	height:116rpx; padding-left: 1%;	float: left;	padding-top: 8rpx;	-webkit-appearance:none;	border:0;}
+.zxnavbarcon .zxHdImgcons .zxHdImg {	width: 100rpx;	height: 100rpx;	border-radius: 50%;	border: 1px solid #dcdcdc;	float: left; margin-right: 10rpx;}
+.zxnavbarcon .zxHdImgcons .zxHdImg image {	width: 100rpx;	height: 100rpx;	border-radius: 50%;}
+.zxHdName{float: left; display:flex;  flex-direction:column; }
+.zxnavbarcon .zxHdImgcons .zxHdName-peo {	text-align: left;	color: #000;		color: red; font-size: 32rpx; font-weight: bold; overflow:hidden;  text-overflow:ellipsis;  white-space:nowrap;}
+.zxnavbarcon .zxHdImgcons view.pblock {	text-align: left;	font-size: 28rpx;	line-height: 48rpx;	float: left;	color: #999;	margin-top:6rpx;	padding-left: 3rpx; display:flex;  flex-direction:row;}
+.zxnavbarcon .zxHdImgcons view.pblock text {	display: block;	text-align: center;	border: 1px solid #d80000;	height: 40rpx;	line-height:40rpx;	width: 80rpx;	color: #d80000;	float: right;	margin-left: 0.1rem;	font-size: 20rpx;}
+.zxnavbarcon .mfcall,.zxnavbarcon .mfcsain {	width: 21%;	height: 100%;	font-size: 28rpx; border-radius: 0;	color: #fff;	text-align: center;	float: right;	background: #D80000; line-height: 120rpx; 	-webkit-appearance:none;	border:0;}
+.zxnavbarcon .mfcsain {	background: #33bd57; float: right;}
