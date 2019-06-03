@@ -90,7 +90,7 @@
                             <view class="left fl">
                                 <view class="lefttitle">{{brandnew.title}}</view>
                                 <view class="text">
-                                    <view class="message">来源：U88加盟网</view>
+                                    <view class="message">来源：安心加盟网</view>
                                     <view class="time">{{brandnew.created_at}}</view>
                                 </view>
                             </view>

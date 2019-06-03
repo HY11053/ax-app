@@ -2,7 +2,7 @@
 <import src="../../templets/liuyan.swan" />
 <view class="container">
     <view class="weizhi">
-        <view><text catchtap="toIndex">首页</text>&nbsp;&gt;&nbsp; <text catchtap="toNlist" data-realpath="{{thistypeinfos.real_path}}">{{thistypeinfos.typename}}</text>&nbsp;&gt;&nbsp;列表：</view>
+        <view><text catchtap="toIndex">首页</text>&nbsp;&gt;&nbsp; <text catchtap="toNlist" data-realpath="{{thistypeinfos.real_path}}">{{thistypeinfos.typename}}</text>&nbsp;&gt;&nbsp;文档详情：</view>
     </view>
     <!--文档详情-->
     <view class="list_middle">
@@ -94,7 +94,7 @@
                             <view class="left fl">
                                 <view class="lefttitle">{{brandnew.title}}</view>
                                 <view class="text">
-                                    <view class="message">来源：U88加盟网</view>
+                                    <view class="message">来源：安心加盟网</view>
                                     <view class="time">{{brandnew.created_at}}</view>
                                 </view>
                             </view>

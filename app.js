@@ -16,7 +16,7 @@ App({
         console.log('SWAN发生错误');
     },
     globalData: {
-        baseUrl:'http://www.anxjm.net/api/',
+        baseUrl:'https://www.anxjm.com/api/',
         baseName:'安心加盟网',
     }
 });

@@ -75,7 +75,7 @@ Page({
                 host:'https://mip.u88.com/article/'+that.data.thisarticleinfos.id+'.html?referer=baidu_applet',
                 realm:'mip.u88.com',
                 job:'guestbook',
-                title:'U88加盟网',
+                title:'安心加盟网',
                 cla:that.data.thisarticleinfos.brandtypename,
                 combrand:that.data.thisarticleinfos.brandname,
                 resolution:'resolution',
@@ -126,7 +126,7 @@ Page({
                 host:'https://mip.u88.com/article/'+that.data.thisarticleinfos.id+'.html?referer=baidu_applet-mod',
                 realm:'mip.u88.com',
                 job:'guestbook',
-                title:'U88加盟网',
+                title:'安心加盟网',
                 cla:that.data.thisarticleinfos.brandtypename,
                 combrand:that.data.thisarticleinfos.brandname,
                 resolution:'resolution',
@@ -189,7 +189,7 @@ Page({
                     });
                 } else{
                     swan.setNavigationBarTitle({
-                        title: 'U88加盟网内容资讯页'
+                        title: '安心加盟网内容资讯页'
                     });
                 }
             },
