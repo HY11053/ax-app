@@ -3,10 +3,9 @@ var app = getApp();
 Page({
   data: {
     imgdatas: [
-        {id:2025045,imgurl:"https://m.u88.com/uploads/picture/92/7d/0e3e4085115f35610d9a2da9cfa2.jpg"},
-        {id:2012519,imgurl:"https://m.u88.com/uploads/picture/dc/ef/6be81af68e04fb5a19e533daa157.jpg"},
-        {id:2005015,imgurl:"https://m.u88.com/uploads/picture/b0/0d/cf7abd0a7f1a74c8d753df9974d2.png"},
-        {id:2011164,imgurl:"https://m.u88.com/uploads/picture/69/bc/020f367ee05d7cc182e44d672d3a.png"},
+        {id:5703,imgurl:"https://m.anxjm.com/mobile/images/ucc.jpg"},
+        {id:20582,imgurl:"https://m.anxjm.com/mobile/images/juneng.jpg"},
+        {id:7396,imgurl:"https://m.anxjm.com/mobile/images/liangpin.jpg"},
     ],
       currentTab:0,
       page:0,
@@ -109,16 +108,8 @@ Page({
     },
     //排行榜首页
     toPaihangbangindex(event){
-        let realPath =''
         swan.navigateTo({
-            url: '/pages/paihangbang/paihangbang?real_path='+realPath,
-        })
-    },
-    //排行榜列表页
-    toPaihangbang(event){
-        let realPath = event.currentTarget.dataset.realpath
-        swan.navigateTo({
-            url: '/pages/paihangbang/paihangbang?real_path='+realPath,
+            url: '/pages/paihangbang/paihangbang',
         })
     },
     //文档列表页
@@ -130,6 +121,9 @@ Page({
     },
     onLoad: function () {
         // 监听页面加载的生命周期函数
+        swan.showLoading({
+            title: '数据加载中 请稍后',
+        })
     },
     onReady: function() {
         // 监听页面初次渲染完成的生命周期函数
@@ -229,14 +223,11 @@ Page({
     },
     onShow: function() {
         // 监听页面显示的生命周期函数
-        swan.showLoading({
-            title: '数据加载中 请稍后',
-        })
         swan.setPageInfo && swan.setPageInfo({
-            title: '安心加盟网_连锁加盟开店创业好项目_最新致富商机尽在U88.com',
-            keywords: 'U88,加盟,创业,加盟网,项目,致富,创业好项目',
-            description: '安心加盟网，连锁加盟网，创业网，商机网，致富网，汇集各地招商加盟连锁代理好品牌，致富经，创业好项目，加盟店，连锁店，开店指导，打造中国最权威的创业加盟网。',
-            articleTitle: '安心加盟网_连锁加盟开店创业好项目_最新致富商机尽在U88.com',
+            title: '安心加盟网-真实性连锁招商加盟项目综合服务平台',
+            keywords: '安心加盟网，招商加盟网，加盟网',
+            description: '安心加盟网站审核真实性连锁加盟好项目加盟网站,提供好的加盟项目加盟店,最新加盟项目,创业加盟项目加盟店,免费项目加盟网站承诺加盟店加盟真实项目加盟网站',
+            articleTitle: '安心加盟网-真实性连锁招商加盟项目综合服务平台',
             success: function () {
                 console.log('首页基础信息设置完成');
             }

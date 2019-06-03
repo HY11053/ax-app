@@ -30,6 +30,20 @@ Page({
     },
     onReady: function() {
         // 监听页面初次渲染完成的生命周期函数
+        var that=this
+        //文档列表
+        swan.request({
+            url: app.globalData.baseUrl+"nlistarticles/?real_path="+that.data.real_path, //请求地址
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                that.setData({ articles:res.data });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
     },
     onShow: function() {
         // 监听页面加载的生命周期函数
@@ -58,19 +72,7 @@ Page({
                 console.log('错误信息：' + err.errMsg);
             }
         });
-        //文档列表
-        swan.request({
-            url: app.globalData.baseUrl+"nlistarticles/?real_path="+that.data.real_path, //请求地址
-            method: 'GET',
-            dataType: 'json',
-            success: function (res) {
-                that.setData({ articles:res.data });
-            },
-            fail: function (err) {
-                console.log('错误码：' + err.errCode);
-                console.log('错误信息：' + err.errMsg);
-            }
-        });
+
     },
 
     onHide: function() {

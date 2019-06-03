@@ -65,15 +65,15 @@ Page({
             return false;
         }
         swan.request({
-            url: "https://mip.u88.com/mipbtphonecomplate/", //请求地址
+            url: "https://mip.anxjm.com/mipbtphonecomplate/", //请求地址
             method: 'POST',
             dataType: 'json',
             data:{
                 username:e.detail.value.username,
                 iphone:e.detail.value.iphone,
                 content:e.detail.value.content,
-                host:'https://mip.u88.com/article/'+that.data.thisarticleinfos.id+'.html?referer=baidu_applet',
-                realm:'mip.u88.com',
+                host:'https://mip.anxjm.com/news/'+that.data.thisarticleinfos.id+'.html?referer=baidu_applet',
+                realm:'mip.anxjm.com',
                 job:'guestbook',
                 title:'安心加盟网',
                 cla:that.data.thisarticleinfos.brandtypename,
@@ -116,15 +116,15 @@ Page({
             return false;
         }
         swan.request({
-            url: "https://mip.u88.com/mipbtphonecomplate/", //请求地址
+            url: "https://mip.anxjm.com/mipbtphonecomplate/", //请求地址
             method: 'POST',
             dataType: 'json',
             data:{
                 username:e.detail.value.tusername,
                 iphone:e.detail.value.tiphone,
                 content:e.detail.value.tcontent,
-                host:'https://mip.u88.com/article/'+that.data.thisarticleinfos.id+'.html?referer=baidu_applet-mod',
-                realm:'mip.u88.com',
+                host:'https://mip.anxjm.com/news/'+that.data.thisarticleinfos.id+'.html?referer=baidu_applet-mod',
+                realm:'mip.anxjm.com',
                 job:'guestbook',
                 title:'安心加盟网',
                 cla:that.data.thisarticleinfos.brandtypename,

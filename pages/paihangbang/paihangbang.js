@@ -25,23 +25,30 @@ Page({
     },
     onLoad: function (options) {
         // 监听页面加载的生命周期函数
-        let realPath=options.real_path;
-        if (realPath === "")
-        {
-            this.setData({real_path:''})
-        } else {
-            this.setData({real_path:options.real_path})
-        }
     },
     onReady: function() {
         // 监听页面初次渲染完成的生命周期函数
+        var that=this
+        //品牌列表
+        swan.request({
+            url: app.globalData.baseUrl+"paihangbang/?real_path="+that.data.real_path, //请求地址
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                that.setData({ brands:res.data });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
     },
     onShow: function() {
         // 监听页面加载的生命周期函数
         var that=this
         //当前栏目信息请求
         swan.request({
-            url: app.globalData.baseUrl+"paihangbang/type/?real_path="+that.data.real_path, //请求地址
+            url: app.globalData.baseUrl+"paihangbang/type/", //请求地址
             method: 'GET',
             dataType: 'json',
             success: function (res) {
@@ -58,19 +65,6 @@ Page({
                         console.log('排行榜页面基础信息设置完成');
                     }
                 });
-            },
-            fail: function (err) {
-                console.log('错误码：' + err.errCode);
-                console.log('错误信息：' + err.errMsg);
-            }
-        });
-        //品牌列表
-        swan.request({
-            url: app.globalData.baseUrl+"paihangbang/?real_path="+that.data.real_path, //请求地址
-            method: 'GET',
-            dataType: 'json',
-            success: function (res) {
-                that.setData({ brands:res.data });
             },
             fail: function (err) {
                 console.log('错误码：' + err.errCode);
