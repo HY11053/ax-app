@@ -1,5 +1,5 @@
 var app = getApp();
-let wxParser = require('../../wxParser/index');
+let bdParse = require('../../bdParse/bdParse');
 Page({
     data: {
         showModal: false,
@@ -37,7 +37,6 @@ Page({
     },
     toBrandList(event){
         let realPath = event.currentTarget.dataset.realpath
-        console.log(event)
         swan.navigateTo({
             url: '/pages/blists/blists?real_path='+realPath,
         })
@@ -174,7 +173,8 @@ Page({
             dataType: 'json',
             success: function (res) {
                 that.setData({ thisarticleinfos:res.data });
-                let ht=res.data.body;
+                let content=res.data.body;
+                that.setData({ content:bdParse.bdParse('contents', 'html', content, that, 5), })
                 wxParser.parse({
                     bind: 'richText',
                     html:ht ,
@@ -182,7 +182,7 @@ Page({
                     enablePreviewImage: true, // 禁用图片预览功能
                 });
                 swan.setNavigationBarTitle({
-                    title: that.data.thisarticleinfos.brandname
+                    title: that.data.thisarticleinfos.brandname+'加盟'
                 });
             },
             fail: function (err) {

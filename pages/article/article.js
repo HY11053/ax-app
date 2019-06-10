@@ -1,5 +1,5 @@
 var app = getApp();
-let wxParser = require('../../wxParser/index');
+let bdParse = require('../../bdParse/bdParse');
 Page({
     data: {
         showModal: false
@@ -175,17 +175,12 @@ Page({
             dataType: 'json',
             success: function (res) {
                 that.setData({ thisarticleinfos:res.data });
-                let ht=res.data.body;
-                wxParser.parse({
-                    bind: 'richText',
-                    html:ht ,
-                    target: that,
-                    enablePreviewImage: true, // 图片预览功能
-                });
+                let content=res.data.body;
+                that.setData({ content:bdParse.bdParse('contents', 'html', content, that, 0), })
                 if (that.data.thisarticleinfos.brandname)
                 {
                     swan.setNavigationBarTitle({
-                        title: that.data.thisarticleinfos.brandname
+                        title: that.data.thisarticleinfos.brandname+'加盟'
                     });
                 } else{
                     swan.setNavigationBarTitle({

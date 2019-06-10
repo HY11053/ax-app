@@ -1,4 +1,4 @@
-<import src="../../wxParser/index.swan" />
+<import src="../../bdParse/bdParse.swan" />
 <import src="../../templets/liuyan.swan" />
 <view class="container">
     <view class="weizhi">
@@ -76,7 +76,7 @@
         <view class="a_content">
             <view>
                 <view class="wxParser">
-                    <template is="wxParser" data="{{{wxParserData:richText.nodes}}}" />
+                    <template is="bdParse" data="{{{bdParseData:contents.nodes}}}" />
                 </view>
 
             </view>

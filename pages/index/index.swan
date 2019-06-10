@@ -20,40 +20,40 @@
 <view class="nav-side">
     <view class="smalllist clearfix">
         <view class="small-box" catchtap="toBrandList" data-realpath="ms">
-            <image src="https://m.u88.com/mobile/applet-images/canyin.png"></image><view>餐饮加盟</view>
+            <image src="https://m.anxjm.com/mobile/applet-images/canyin.png"></image><view>餐饮加盟</view>
         </view>
         <view class="small-box" catchtap="toBrandList" data-realpath="186">
-            <image src="https://m.u88.com/mobile/applet-images/yinpin.png"></image><view>茶饮加盟</view>
+            <image src="https://m.anxjm.com/mobile/applet-images/yinpin.png"></image><view>茶饮加盟</view>
         </view>
         <view class="small-box"  catchtap="toBrandList" data-realpath="jy">
-            <image src="https://m.u88.com/mobile/applet-images/jiaoyu.png"></image><view>教育培训</view>
+            <image src="https://m.anxjm.com/mobile/applet-images/jiaoyu.png"></image><view>教育培训</view>
         </view>
         <view class="small-box rightbox" catchtap="toBrandList" data-realpath="mr">
-            <image src="https://m.u88.com/mobile/applet-images/meirong.png"></image><view>美容加盟</view>
+            <image src="https://m.anxjm.com/mobile/applet-images/meirong.png"></image><view>美容加盟</view>
         </view>
         <view class="small-box rightbox" catchtap="toBrandList" data-realpath="jj">
-            <image src="https://m.u88.com/mobile/applet-images/jiaju.png"></image><view>家居加盟</view>
+            <image src="https://m.anxjm.com/mobile/applet-images/jiaju.png"></image><view>家居加盟</view>
         </view>
         <view class="small-box rightbox" catchtap="toBrandList" data-realpath="ls">
-            <image src="https://m.u88.com/mobile/applet-images/lingshou.png"></image><view>零售加盟</view>
+            <image src="https://m.anxjm.com/mobile/applet-images/lingshou.png"></image><view>零售加盟</view>
         </view>
         <view class="small-box rightbox" catchtap="toBrandList" data-realpath="fw">
-            <image src="https://m.u88.com/mobile/applet-images/fuwu.png"></image><view>生活服务</view>
+            <image src="https://m.anxjm.com/mobile/applet-images/fuwu.png"></image><view>生活服务</view>
         </view>
         <view class="small-box rightbox" catchtap="toBrandList" data-realpath="hb">
-            <image src="https://m.u88.com/mobile/applet-images/huanbao.png"></image><view>环保加盟</view>
+            <image src="https://m.anxjm.com/mobile/applet-images/huanbao.png"></image><view>环保加盟</view>
         </view>
         <view class="small-box rightbox" catchtap="toBrandList" data-realpath="ye">
-            <image src="https://m.u88.com/mobile/applet-images/youer.png"></image><view>母婴加盟</view>
+            <image src="https://m.anxjm.com/mobile/applet-images/youer.png"></image><view>母婴加盟</view>
         </view>
-        <view class="small-box rightbox" catchtap="toPaihangbangindex" data-realpath="sj">
-            <image src="https://m.u88.com/mobile/applet-images/paihangbang.png"></image><view>服装加盟</view>
+        <view class="small-box rightbox" catchtap="toBrandList" data-realpath="sj">
+            <image src="https://m.anxjm.com/mobile/applet-images/paihangbang.png"></image><view>服装加盟</view>
         </view>
         <view class="clear"></view>
     </view>
 </view>
 <view class="recommend clearfix">
-<image src="https://m.u88.com/mobile/applet-images/icon-kmtt.png"></image>
+<image src="https://m.anxjm.com/mobile/applet-images/icon-kmtt.png"></image>
     <swiper vertical="true" autoplay="true" interval="3000" duration="500" id="moocBox">
         <block>
             <swiper-item s-for="abrand in abrands"><view  catchtap="toBrandArticle" data-index="{{abrand.id}}">{{abrand.title}}</view></swiper-item>

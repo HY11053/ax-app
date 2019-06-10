@@ -1,7 +1,5 @@
 /* 引入内容渲染模块样式 */
-
-@import "wxParser/index.css";
-
+@import "./bdParse/bdParse.css";
 /**app.css**/
 .container {
   height: 100%;
