@@ -1,6 +1,5 @@
 <import src="../../bdParse/bdParse.swan" />
 <import src="../../templets/liuyan.swan" />
-<view class="container">
     <view class="weizhi">
         <view><text catchtap="toIndex">首页</text>&nbsp;&gt;&nbsp; <text catchtap="toNlist" data-realpath="{{thistypeinfos.real_path}}">{{thistypeinfos.typename}}</text>&nbsp;&gt;&nbsp;文档详情：</view>
     </view>
@@ -133,8 +132,7 @@
             </view>
         </view>
     </view>
-    <!--文档详情end-->
-</view>
+    <!--文档详情end-->>
 <view class="bottom-view" s-if="{{thisarticleinfos.brandid}}">
     <view class="zxNavBar">
         <view class="zxnavbarcon">

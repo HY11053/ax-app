@@ -1,12 +1,3 @@
-/**
- * html2Json 改造来自: https://github.com/Jxck/html2json
- 
- * 百度小程序富文本解析
- * 开发者：腾石建站
- * 官网:http://www.tengcee.com
- * wxParse的原作者github地址: https://github.com/icindy/wxParse
- */
-
 var __placeImgeUrlHttps = "https";
 var __emojisReg = '';
 var __emojisBaseSrc = '';

@@ -1,12 +1,4 @@
 /**
- * 百度小程序富文本解析
- * 开发者：腾石建站
- * 官网:http://www.tengcee.com
- * bdParse.swan改造自wxParse.wxml
- * wxParse的原作者github地址: https://github.com/icindy/wxParse
- */
-
-/**
  * utils函数引入
  **/
 import showdown from './showdown.js';

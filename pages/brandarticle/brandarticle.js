@@ -173,8 +173,7 @@ Page({
             dataType: 'json',
             success: function (res) {
                 that.setData({ thisarticleinfos:res.data });
-                let content=res.data.body;
-                that.setData({ content:bdParse.bdParse('contents', 'html', content, that, 5), })
+                that.setData({ content:bdParse.bdParse('contents', 'html', res.data.body, that, 5)})
                 wxParser.parse({
                     bind: 'richText',
                     html:ht ,

@@ -1,13 +1,3 @@
-/**
- * 
- * showdown: https://github.com/showdownjs/showdown
- *
- * 百度小程序富文本解析
- * 开发者：腾石建站
- * 官网:http://www.tengcee.com
- * wxParse的原作者github地址: https://github.com/icindy/wxParse
- */
-
 function getDefaultOpts(simple) {
   'use strict';
 

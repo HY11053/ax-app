@@ -175,8 +175,7 @@ Page({
             dataType: 'json',
             success: function (res) {
                 that.setData({ thisarticleinfos:res.data });
-                let content=res.data.body;
-                that.setData({ content:bdParse.bdParse('contents', 'html', content, that, 0), })
+                that.setData({ content:bdParse.bdParse('contents', 'html', res.data.body, that, 5)})
                 if (that.data.thisarticleinfos.brandname)
                 {
                     swan.setNavigationBarTitle({

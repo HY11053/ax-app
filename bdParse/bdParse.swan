@@ -1,11 +1,3 @@
-<!--**
- * 百度小程序富文本解析
- * 开发者：腾石建站
- * 官网:http://www.tengcee.com
- * bdParse.swan改造自wxParse.wxml
- * wxParse的原作者github地址: https://github.com/icindy/wxParse
- */-->
-
 <!--基础元素-->
 <template name="bdParseVideo">
   <!--增加video标签支持，并循环添加-->
@@ -15,7 +7,7 @@
 </template>
 
 <template name="bdParseImg">
-  <image class="{{item.classStr}} bdParse-{{item.tag}}" data-from="{{item.from}}" data-src="{{item.attr.src}}"  data-idx="{{item.imgIndex}}" src="{{item.attr.src}}"  bindload="bdParseImgLoad" bindtap="bdParseImgTap" mode="aspectFit" style="width:{{item.width}}px;height:{{item.height}}px;"/>
+  <image class="{{item.classStr}} bdParse-{{item.tag}}" data-from="{{item.from}}" data-src="{{item.attr.src}}"  data-idx="{{item.imgIndex}}" src="{{item.attr.src}}"  bindload="bdParseImgLoad" bindtap="bdParseImgTap" mode="aspectFit" style="height:{{item.height}}px;"/>
 </template>
 
 <template name="WxEmojiView">

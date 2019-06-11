@@ -1,16 +1,3 @@
-/**
- * 
- * htmlParser改造自: https://github.com/blowsie/Pure-JavaScript-HTML5-Parser
- *
- * github地址: https://github.com/icindy/wxParse
- * 
- * htmlParser 2次改造自wxParse 20181003
- * 
- * 
- * 百度小程序富文本解析
- * 开发者：腾石建站
- * 官网:http://www.tengcee.com
- */
 // Regular Expressions for parsing tags and attributes
 var startTag = /^<([-A-Za-z0-9_]+)((?:\s+[a-zA-Z_:][-a-zA-Z0-9_:.]*(?:\s*=\s*(?:(?:"[^"]*")|(?:'[^']*')|[^>\s]+))?)*)\s*(\/?)>/,
 	endTag = /^<\/([-A-Za-z0-9_]+)[^>]*>/,
